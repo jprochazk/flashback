@@ -19,7 +19,8 @@ https://github.com/linkedin/flashback
     <version>0.0.4</version>
   </dependency>
   ```
-&nbsp;&nbsp;&nbsp;&nbsp;I can't help with any other IDE, you will have to look up something like "how to create maven module from existing pom.xml" for your IDE.
+&nbsp;&nbsp;&nbsp;&nbsp;I can't help with any other IDE, you will have to look up something along the lines of  
+&nbsp;&nbsp;&nbsp;&nbsp;"how to create maven module from existing pom.xml" for your IDE.
 
 3. Check out the example to see how it works: [FlashbackBaseTestExample](flashback-test-utils/src/test/java/com/jpr/flashbacktestutils/FlashbackBaseTestExample.java)
 
