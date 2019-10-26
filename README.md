@@ -3,6 +3,8 @@
 Flashback is made by LinkedIn. All code in this repo belongs to LinkedIn.
 https://github.com/linkedin/flashback
 
+This repository includes all the Flashback modules converted from Gradle to Maven.
+
 ## How to use:
 
 1. **Clone the repository.**
