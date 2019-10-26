@@ -8,17 +8,18 @@ https://github.com/linkedin/flashback
 1. Clone the repository.
 2. Add the test utils as a maven dependency:
 
-In Intellij by JetBrains, you go into File -> New -> Module from existing sources  
-and create the module by selecting the pom.xml file in the cloned repository.
-
-Then, you can add this to your own pom.xml dependencies:
-```xml
-<dependency>
-  <groupId>com.jpr</groupId>
-  <artifactId>flashback-test-utils</artifactId>
-  <version>0.0.4</version>
-</dependency>
-```
+&nbsp;&nbsp;&nbsp;&nbsp;In Intellij by JetBrains, you go into File -> New -> Module from existing sources  
+  and create the module by selecting the pom.xml file in the cloned repository.
+  
+&nbsp;&nbsp;&nbsp;&nbsp;Then, you can add this to your own pom.xml dependencies:
+  ```xml
+  <dependency>
+    <groupId>com.jpr</groupId>
+    <artifactId>flashback-test-utils</artifactId>
+    <version>0.0.4</version>
+  </dependency>
+  ```
+&nbsp;&nbsp;&nbsp;&nbsp;I can't help with any other IDE, you will have to look up something like "how to create maven module from existing pom.xml" for your IDE.
 
 3. Check out the example to see how it works: [FlashbackBaseTestExample](flashback-test-utils/src/test/java/com/jpr/flashbacktestutils/FlashbackBaseTestExample.java)
 
