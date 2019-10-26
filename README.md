@@ -9,7 +9,7 @@ https://github.com/linkedin/flashback
 2. Add the test utils as a maven dependency:
 
 &nbsp;&nbsp;&nbsp;&nbsp;In Intellij by JetBrains, you go into File -> New -> Module from existing sources  
-  and create the module by selecting the pom.xml file in the cloned repository.
+&nbsp;&nbsp;&nbsp;&nbsp;and create the module by selecting the pom.xml file in the cloned repository.
   
 &nbsp;&nbsp;&nbsp;&nbsp;Then, you can add this to your own pom.xml dependencies:
   ```xml
