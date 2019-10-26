@@ -5,8 +5,13 @@ https://github.com/linkedin/flashback
 
 ## How to use:
 
-1. Clone the repository into your project.
+1. Clone the repository.
 2. Add the test utils as a maven dependency:
+
+In Intellij by JetBrains, you go into File -> New -> Module from existing sources  
+and create the module by selecting the pom.xml file in the cloned repository.
+
+Then, you can add this to your own pom.xml dependencies:
 ```xml
 <dependency>
   <groupId>com.jpr</groupId>
