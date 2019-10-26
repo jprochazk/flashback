@@ -1,0 +1,36 @@
+{
+  "NAME" : "SCENE_NAME.json",
+  "HTTPEXCHANGELIST" : {
+    "HTTPEXCHANGE1" : {
+      "UPDATETIME" : "26 Oct 2019 12:29:51 GMT",
+      "HTTPREQUEST" : {
+        "HTTPMETHOD" : "GET",
+        "HTTPURI" : "http://svatky.adresa.info/json",
+        "HTTPHEADERS" : {
+          "Accept" : "application/json",
+          "Host" : "svatky.adresa.info",
+          "Proxy-Connection" : "Keep-Alive",
+          "User-Agent" : "Apache-HttpClient/4.3.6 (java 1.5)",
+          "Accept-Encoding" : "gzip,deflate"
+        },
+        "BINARYHTTPBODY" : ""
+      },
+      "HTTPRESPONSE" : {
+        "HTTPSTATUSCODE" : 200,
+        "HTTPHEADERS" : {
+          "Server" : "Cowboy",
+          "Connection" : "keep-alive",
+          "Access-Control-Allow-Origin" : "*",
+          "Last-Modified" : "Sat, 26 Oct 2019 00:00:00 GMT",
+          "Cache-Control" : "max-age=600",
+          "Expires" : "Sun, 27 Oct 2019 00:00:00 GMT",
+          "Content-Type" : "application/json; charset=UTF-8",
+          "Date" : "Sat, 26 Oct 2019 12:29:51 GMT",
+          "Transfer-Encoding" : "chunked",
+          "Via" : "1.1 vegur"
+        },
+        "STRINGHTTPBODY" : "[{\"date\":\"2610\",\"name\":\"Erik\"}]"
+      }
+    }
+  }
+}
