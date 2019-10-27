@@ -12,7 +12,6 @@ import com.linkedin.flashback.scene.DummyScene;
 import com.linkedin.flashback.scene.Scene;
 import com.linkedin.flashback.smartproxy.FlashbackRunner;
 import com.linkedin.mitm.model.CertificateAuthority;
-import org.apache.http.HttpHost;
 
 import java.io.Closeable;
 import java.io.InputStream;
@@ -98,9 +97,14 @@ public final class FlashbackContainer implements Closeable
         this.dirty = true;
     }
 
-    /** Get the HttpHost of the Flashback proxy server. */
-    public HttpHost getProxy() {
-        return new HttpHost(host, port);
+    /** Get Flashback proxy host */
+    public String getProxyHost() {
+        return host;
+    }
+
+    /** Get Flashback proxy port */
+    public int getProxyPort() {
+        return port;
     }
 
     public boolean isRunning() {

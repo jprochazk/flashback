@@ -34,10 +34,10 @@ public class FlashbackBaseTest {
     protected String proxyHost = DEFAULT_PROXY_HOST;
     protected int proxyPort = DEFAULT_PROXY_PORT;
 
-    /** SSL Settings */
-    protected InputStream rootCertificateInputStream;
-    protected String rootCertificatePassphrase;
-    protected CertificateAuthority certificateAuthority;
+    /** SSL Settings - set using {@link #setSslSettings(InputStream, String, CertificateAuthority)} */
+    private InputStream rootCertificateInputStream;
+    private String rootCertificatePassphrase;
+    private CertificateAuthority certificateAuthority;
     private boolean sslInitialized = false;
 
     /** Flashback wrapper class instance */

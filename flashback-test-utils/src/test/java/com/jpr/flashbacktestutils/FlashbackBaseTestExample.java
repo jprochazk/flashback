@@ -6,6 +6,8 @@
 package com.jpr.flashbacktestutils;
 
 import com.linkedin.flashback.scene.Scene;
+import com.linkedin.mitm.model.CertificateAuthority;
+import org.apache.http.HttpHost;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.HttpClientBuilder;
@@ -15,6 +17,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.IOException;
+import java.io.InputStream;
 
 public class FlashbackBaseTestExample extends FlashbackBaseTest {
 
@@ -24,8 +27,8 @@ public class FlashbackBaseTestExample extends FlashbackBaseTest {
      * The base test class does not depend on any testing library,
      * which means you have to call the appropriate functions yourself before your tests.
      *
-     * If you are recording HTTPS requests, you have to set the SSL settings using {@link FlashbackBaseTest#setSslSettings}
-     * before calling {@link FlashbackBaseTest#initializeFlashback}. If you don't do this, Flashback won't be able to make
+     * If you are recording HTTPS requests, you have to set the SSL settings using {@link FlashbackBaseTest#setSslSettings(InputStream, String, CertificateAuthority)}
+     * before calling {@link FlashbackBaseTest#initializeFlashback()}. If you don't do this, Flashback won't be able to make
      * the request, and your test will stall infinitely (unless you set a timeout property for your Http client)
      * To learn how to do get a CA certificate setup, read https://jamielinux.com/docs/openssl-certificate-authority/introduction.html.
      */
@@ -60,7 +63,9 @@ public class FlashbackBaseTestExample extends FlashbackBaseTest {
 
         // Here I am using Apache HttpClient, but anything that allows you to use a proxy will work
         // Create your client with Flashback as the proxy
-        HttpClient httpClient = HttpClientBuilder.create().setProxy(Flashback.getProxy()).build();
+        HttpClient httpClient = HttpClientBuilder.create()
+            .setProxy(new HttpHost(Flashback.getProxyHost(), Flashback.getProxyPort()))
+            .build();
 
         // Send your actual request, then receive the response and assert
         var request = new HttpGet(TEST_URI);
