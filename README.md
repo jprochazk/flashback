@@ -1,9 +1,6 @@
 # Flashback Test Utilities
 
-Flashback is made by LinkedIn. All code in this repo belongs to LinkedIn.
-https://github.com/linkedin/flashback
-
-This repository includes all the Flashback modules converted from Gradle to Maven.
+Flashback is made by LinkedIn. This repository includes all the Flashback modules converted from Gradle to Maven. https://github.com/linkedin/flashback
 
 ## How to use:
 
